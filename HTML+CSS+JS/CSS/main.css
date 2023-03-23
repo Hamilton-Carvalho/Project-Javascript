@@ -22,6 +22,22 @@
     top: 0;
     left: 0;
   }
+
+  .jl-logo {
+    width: 74px;
+    height: 110px;
+    float: left;
+    margin-left: 60px;
+    background-color: #2ccb69;
+    border-radius: 0 0 37px 0;
+  }
+
+  .jl-logo img {
+    width: 46px;
+    height: 31px;
+    display: block;
+    margin: 55px auto 0;
+  }
 }
 
 @media screen and (min-width: 576px) {
