@@ -58,6 +58,20 @@
     margin-left: 30px;
   }
 
+  .jl-btn-contact {
+    width: 45px;
+    height: 45px;
+    display: block;
+    background-color: #2ccb69;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    border-radius: 50%;
+    z-index: 200;
+    background-image: url('../IMAGES/icon-contact-close.svg');
+    background-repeat: no-repeat;
+  }
+
   .jl-menu a {
     font-family: "Open Sans";
     font-size: 16px;
@@ -67,7 +81,7 @@
     display: inline-block;
     margin: 50px 20px 0 20px;
     font-weight: 400;
-    position: relative;
+    position: relative;   
   }
 
   .jl-menu a:first-child {
@@ -89,7 +103,7 @@
     left: 0;
     transition: all 0.4s ease-out;
     transform: scale(0, 1);
-    transform-origin: left;
+    transform-origin: center left;
 
   }
 
