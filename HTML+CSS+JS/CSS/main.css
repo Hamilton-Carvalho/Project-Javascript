@@ -61,11 +61,10 @@ p {
     z-index: 200;
     background-image: url('../IMAGES/icon-contact-close.svg');
     background-repeat: no-repeat;
+    transition: all 0.2s ease-out;
   }
 
-  .jl-btn-contact:hover{
-    background-position: -45px;
-  }
+
 
   .jl-contact-info {
     width: 245px;
@@ -75,6 +74,7 @@ p {
     bottom: 115px;
     right: 65px;
     z-index: 200;
+    display: none;
   }
 
   .jl-contact-info-inner{
@@ -93,13 +93,13 @@ p {
     height: 45px;
     display: block;
     position: relative;
-    left: -10px;
-    margin-top: 15px;
+    left: -12px;
+    margin-top: 7px;
   }
 
   .jl-social {
-    width: 24px;
-    height: 20px;
+    width: 45px;
+    height: 45px;
     display: inline-block;
   }
 
@@ -124,6 +124,10 @@ p {
     width: 25px;
     height: 25px;
     display: block;
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    background-image: transparent url('../IMAGES/corner.svg') no-repeat;
   }
 }
 
@@ -212,4 +216,14 @@ p {
 
 .jl-bg-black {
   color: #000;
+}
+
+/* CLASSES COMPORTAMENTO */
+
+.jl-is-open {
+  display: block;
+}
+
+.jl-change-icon{
+  background-position: -45px;
 }
