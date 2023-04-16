@@ -6,7 +6,7 @@
   -moz-osx-font-smoothing: grayscale;   
 }
 
-p {
+p, label {
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -115,7 +115,7 @@ p {
       z-index: 1200;
   }
 
-  .jl-modal-header {
+  .jl-modal-header, .jl-modal-body, .jl-form {
       width: 100%;
       display: table;
       position: relative;
@@ -135,6 +135,27 @@ p {
       border: none;
       background-color: #2f2f2f;
   }
+
+  .jl-form label {
+      margin-bottom: 10px;
+      font-size: 16px;
+      display: inline-block;
+  }
+
+  .jl-field, .jl-textarea {
+      width: 100%;
+      background-color: #2f2f2f;
+      border-radius: 4px;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      text-indent: 15px;
+  }
+
+  .jl-field {
+      height: 45px;
+  }
+
 
   .jl-topbar {
       width: 100%;
@@ -389,6 +410,11 @@ p {
   border: none;
   transition: all 0.2s ease-out;
   text-transform: lowercase;
+}
+
+.jl-btn-block {
+  display: block;
+  width: 100%;
 }
 
 .jl-btn-small {
