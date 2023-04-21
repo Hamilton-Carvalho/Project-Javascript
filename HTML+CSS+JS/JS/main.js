@@ -33,3 +33,13 @@ for (var i = 0; i < toggleModal.length; i++) {
 
     });
 }
+
+// Animando Elementos on Scroll com Waypoints
+var myScrollDown = document.querySelector('.jl-scroll-down');
+var waypoint = new Waypoint({
+    element: myScrollDown,
+    handler: function () {
+        myScrollDown.classList.toggle('jl-fade-out');
+    },
+    offset: '80%'
+});
