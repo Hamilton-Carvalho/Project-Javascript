@@ -344,44 +344,93 @@ p, label {
        width: 145px;
        height: 400px;
        display: table;
-       background-color: red;
        position: absolute;
        left: 15px;
        top: 26vh;
    }
 
-   .jl-item-counter {
+   .jl-navigator-counter {
        width: 100%;
        height: 90px;
        display: block;
-       background-color: blue;
        margin-bottom: 60px;
+       position: relative;
+   }
+
+   .jl-navigator-counter:before {
+       content: '';
+       display: block;
+       width: 35px;
+       height: 100%;
+       background-color: #1c1c1c;
+       position: absolute;
+       top: 3px;
+       left: 0;
+   }
+
+   .jl-navigator-counter span {
+       font-family: 'Open Sans', sans-serif;
+       font-size: 120px;
+       line-height: 90px;
+       font-weight: 600;
    }
 
    .jl-item-navigator {
        width: 100%;
        display: table;
-       background-color: greenyellow;
    }
 
    .jl-item-navigator a {
        width: 20px;
        height: 1px;
-       background-color: purple;
        display: block;
-       margin-bottom: 80px;
+       margin: 0 0 80px 35px;
+       background-color: #4D4C4C;
+   }
+
+   .jl-item-navigator a.jl-item-active {
+      width: 90px;
+      background-color: #2CCB69;
    }
 
    .jl-item-navigator a:last-child {
        margin-bottom: 30px;
    }
 
-   .jl-portfolio-next-prev {
+   .jl-items-next-prev {
        width: 100%;
        height: 45px;
-       background-color: deeppink;
-       display: block;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #2C2C2C;
+       border-radius: 23px;
    }
+
+   .jl-items-next-prev > div {
+       height: 32px;
+   }
+
+   .jl-items-counter {
+       font-family: 'Open Sans', sans-serif;
+       color: #4D4C4C;
+       line-height: 32px;         
+   }
+
+   .jl-item-prev, .jl-item-next {
+       width: 45px;
+       color: #2CCB69;
+       text-align: center;
+       cursor: pointer;
+   }
+
+   .jl-items-counter span:nth-child(1){
+      color: #bcbcbc;
+   }
+
+   ion-icon {
+      font-size: 32px;
+    }
 
 }
 
@@ -616,4 +665,14 @@ p, label {
 
 .jl-fade-out{
   animation: fadeOut 2s forwards ease-out;
+}
+
+.jl-no-radius-left {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.jl-no-radius-right {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
