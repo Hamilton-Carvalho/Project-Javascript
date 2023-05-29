@@ -428,9 +428,29 @@ p, label {
       color: #bcbcbc;
    }
 
-   ion-icon {
+  ion-icon {
       font-size: 32px;
-    }
+  }
+
+  .jl-slider-container {
+      background-color: white;
+      display: block;
+      overflow: hidden;
+  }
+
+  .jl-slider-list {
+      width: auto;
+      height: 700px;
+      display: block;
+      background-color: deeppink;
+      list-style: none;
+  }
+
+  .jl-slider-item {
+      display: block;
+      height: 500px;
+      float: left;
+  }
 
 }
 
@@ -675,4 +695,24 @@ p, label {
 .jl-no-radius-right {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.purple {
+  background: purple;
+}
+
+.blue {
+  background: blue;
 }
